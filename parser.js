@@ -28,7 +28,7 @@ const chatId = config.chatId;
                 const ticker = tickers[symbol];
                 // Рассчитываем процентное изменение за последние 24 часа
                 const change = ticker['percentage'];
-                return change <= -5;
+                return change <= -50;
             });
 
             if (fallenTokens.length !== 0) {
